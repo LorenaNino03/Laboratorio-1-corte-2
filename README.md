@@ -20,6 +20,24 @@ Se pone las maquinas solo anfitrión
 Se valida la IP en ambas maquinas 
 <img width="1410" height="657" alt="image" src="https://github.com/user-attachments/assets/8b230ba0-b2a8-4b00-bc1f-c487cc1c561b" />
 
+# 6.2 Reconocimiento y Escaneo de Vulnerabilidades con Nmap
+Escaneo de la Red con Nmap, con el comando nmap -sn 192.168.X.0/24 para mirar la subred para hosts activos
+<img width="1195" height="335" alt="image" src="https://github.com/user-attachments/assets/feec86b2-cba9-4904-aa36-cda78e19f99e" />
+# netdiscover es una excelente herramienta para el descubrimiento de hosts en redes locales (puede requerir sudo):
+Podemos observar los host que estan conectados. 
+<img width="1077" height="311" alt="image" src="https://github.com/user attachments/assets/d806d093-5cdf-4363-bdf6-82c99ad919a0" />
+
+Identifique la IP de Metasploitable 2. Para el resto de la práctica.
+<img width="732" height="113" alt="image" src="https://github.com/user-attachments/assets/3822d5eb-76ed-4967-b6ff-54efe0a3ca52" />
+
+# 6.2.2 Escaneo Detallado de Puertos y Servicios con Nmap 
+Se procede a realizar el escaneo de la vistima para verificar los puertos 
+# Desglose de los flags de Nmap:
+<img width="856" height="360" alt="image" src="https://github.com/user-attachments/assets/401880c1-c0fb-4797-83d2-60c6caa57356" />
+
+
+
+
 
 
 

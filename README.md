@@ -55,6 +55,11 @@ para que el exploit funcione. Use show options para ver qué parámetros son nec
 
 <img width="725" height="87" alt="image" src="https://github.com/user-attachments/assets/4f22e31f-0ebf-4495-b019-f31276e1cecb" />
 
+set RHOSTS 192.168.56.102
+exploit
+<img width="913" height="402" alt="image" src="https://github.com/user-attachments/assets/c7a7466a-2c9e-4c61-baf3-88cfce6096be" />
+
+
 
 
 

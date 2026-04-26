@@ -105,7 +105,25 @@ cat /etc/passwd # Lista de usuarios del sistema
 cat /etc/shadow # Contraseñas hasheadas (solo legible por root)
 cat /etc/group # Grupos del sistema
 <img width="642" height="818" alt="image" src="https://github.com/user-attachments/assets/65c21406-f75b-41a8-97e3-355c7941d062" />
- 
+# Procesos en Ejecución: 
+ps aux # Todos los procesos en ejecución con detalles
+ <img width="1540" height="783" alt="image" src="https://github.com/user-attachments/assets/969f5aa5-2b15-4bfe-84d1-da69e8b9204b" />
+top # Monitoreo de procesos en tiempo real (si está disponible)
+No se encuentra disponible 
+# - Archivos y Directorios Sensibles: 
+ls -la / # Listar contenido del directorio raíz
+<img width="593" height="352" alt="image" src="https://github.com/user-attachments/assets/bb8e887f-0455-4b94-9064-251afe9e4814" />
+
+ls -la /var/www # Contenido de servidores web (si aplica)
+<img width="522" height="152" alt="image" src="https://github.com/user-attachments/assets/7d301d93-459c-4c6d-80ed-5ea5bcfc4cf7" />
+find / -name
+<img width="423" height="77" alt="image" src="https://github.com/user-attachments/assets/80be50bd-e92e-49f5-89d7-b03279bd53aa" />
+Historial de Comandos: 
+<img width="696" height="823" alt="image" src="https://github.com/user-attachments/assets/2df36254-24e8-4e1c-a81b-1953627ad2f5" />
+<img width="746" height="548" alt="image" src="https://github.com/user-attachments/assets/98888571-9a8e-40b4-910d-5ed88bdf279a" />
+
+
+
 
 
 

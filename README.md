@@ -1,4 +1,4 @@
-# Laboratorio-1-corte-2
+# Laboratorio-1-corte-2- Miguel Angel Martín- Jeimy Lorena Niño
 
 La practica se realiza con virtualbox, se descarga maquina virtual de Kali Linux y Metasploitable 2
 <img width="1054" height="514" alt="image" src="https://github.com/user-attachments/assets/a7a3e350-13ca-4afd-9e10-0ba1c206428a" />
